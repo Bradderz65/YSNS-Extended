@@ -4,14 +4,17 @@ This is an extended version of the original "You Shall Not Spawn" mod by ElocinD
 
 ## What is YSNS?
 
-YSNS (You Shall Not Spawn) is a lightweight mod that gives you complete control over mob spawning in your Minecraft world. It allows you to disable specific mob spawns globally or per dimension.
+YSNS (You Shall Not Spawn) is a lightweight mod that gives you complete control over mob spawning in your Minecraft world. It allows you to disable specific mob spawns globally, per dimension, or per biome.
 
 ## What's New in This Extended Edition?
 
-- **Optimized for 1.20.1**: Fully compatible with Minecraft 1.20.1 and the latest Fabric loader
-- **Improved Performance**: Reduced memory usage and optimized spawn checks
-- **Enhanced Configuration**: More granular control over mob spawning rules
-- **Better Compatibility**: Works seamlessly with other popular Fabric mods
+- **Biome-Specific Controls**: New ability to control mob spawning based on biomes
+- **Enhanced Zombie Handling**: Special handling for zombie variants to ensure proper spawn control
+- **Improved Regex Support**: Better pattern matching for entity and biome IDs
+- **Optimized for 1.20.1**: Fully compatible with Minecraft 1.20.1 and the latest Fabric loader (0.15.11+)
+- **Updated Dependencies**: Works with the latest Fabric API (0.92.2+) and Necronomicon (1.4.2)
+- **Performance Improvements**: Reduced memory usage and optimized spawn checks
+- **Better Error Handling**: Improved logging and error recovery
 
 ## Requirements
 
@@ -29,14 +32,30 @@ YSNS (You Shall Not Spawn) is a lightweight mod that gives you complete control 
 
 ## Configuration
 
-The mod creates configuration files in the `config` folder:
-- `ysns-disabled-entities.json` - Configure globally disabled entities
-- `ysns-per-dimension-entities.json` - Configure dimension-specific entity spawning rules
+The mod creates configuration files in the `config/ysns` folder:
+- `disabled_entities.json5` - Configure globally disabled entities
+- `per_dimension_entities.json5` - Configure dimension-specific entity spawning rules
+- `per_biome_entities.json5` - Configure biome-specific entity spawning rules (NEW!)
+
+### Example Configuration
+
+```json
+// Disable zombies in all biomes
+{
+  "biomes": [
+    {
+      "entityId": "minecraft:zombie",
+      "biome": "!minecraft:.*",
+      "spawn_chance": 0.0
+    }
+  ]
+}
+```
 
 ## Credits
 
 - Original mod by ElocinDev
-- Extended and updated by [Your Name/Username]
+- Extended and updated by Bradderz65
 
 ## License
 
