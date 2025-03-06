@@ -1,12 +1,11 @@
 ## 2.0.3 - Extended Edition
-- Added biome-specific mob spawn control with new `per_biome_entities.json5` configuration
-- Implemented special handling for zombie variants to ensure proper spawn control
-- Enhanced regex support for more flexible entity and biome pattern matching
+- Added biome-specific mob spawn control - keep certain mobs out of specific biomes
+- Implemented custom spawn chance settings from 0% to 100% for fine-tuned control
+- Enhanced regex pattern matching for targeting multiple entities or biomes at once
 - Optimized for Minecraft 1.20.1 with Fabric Loader 0.15.11+
-- Updated dependencies to latest versions (Fabric API 0.92.2+)
-- Improved error handling and logging for better troubleshooting
+- Updated to latest dependencies (Fabric API 0.92.2+)
+- Improved performance with minimal impact on gameplay
 - Fixed compatibility issues with other popular Fabric mods
-- Optimized spawn check algorithm for better performance
 
 ## 2.0.2
 - Fixed crash when using regex on per-dimension bans

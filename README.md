@@ -8,13 +8,12 @@ YSNS (You Shall Not Spawn) is a lightweight mod that gives you complete control 
 
 ## What's New in This Extended Edition?
 
-- **Biome-Specific Controls**: New ability to control mob spawning based on biomes
-- **Enhanced Zombie Handling**: Special handling for zombie variants to ensure proper spawn control
-- **Improved Regex Support**: Better pattern matching for entity and biome IDs
+- **Biome-Specific Controls**: Control mob spawning based on biomes - keep certain mobs out of specific areas
+- **Advanced Pattern Matching**: Use powerful regex patterns to target groups of mobs or biomes at once
+- **Spawn Chance Control**: Set custom spawn chances from 0% to 100% for fine-tuned mob control
 - **Optimized for 1.20.1**: Fully compatible with Minecraft 1.20.1 and the latest Fabric loader (0.15.11+)
 - **Updated Dependencies**: Works with the latest Fabric API (0.92.2+) and Necronomicon (1.4.2)
-- **Performance Improvements**: Reduced memory usage and optimized spawn checks
-- **Better Error Handling**: Improved logging and error recovery
+- **Performance Optimized**: Minimal impact on game performance even with complex rules
 
 ## Requirements
 
@@ -40,12 +39,22 @@ The mod creates configuration files in the `config/ysns` folder:
 ### Example Configuration
 
 ```json
-// Disable zombies in all biomes
+// Disable hostile mobs in forest biomes
 {
   "biomes": [
     {
       "entityId": "minecraft:zombie",
-      "biome": "!minecraft:.*",
+      "biome": "minecraft:forest",
+      "spawn_chance": 0.0
+    },
+    {
+      "entityId": "minecraft:skeleton",
+      "biome": "minecraft:forest",
+      "spawn_chance": 0.0
+    },
+    {
+      "entityId": "minecraft:creeper",
+      "biome": "minecraft:forest",
       "spawn_chance": 0.0
     }
   ]
