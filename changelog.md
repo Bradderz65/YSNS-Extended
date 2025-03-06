@@ -1,8 +1,6 @@
 ## 2.0.3 - Extended Edition
-- Added biome-specific mob spawn control - keep certain mobs out of specific biomes
-- Implemented custom spawn chance settings from 0% to 100% for fine-tuned control
-- Enhanced regex pattern matching for targeting multiple entities or biomes at once
-- Optimized for Minecraft 1.20.1 with Fabric Loader 0.15.11+
+- Added NEW biome-specific mob spawn control feature
+- Updated for Minecraft 1.20.1 with Fabric Loader 0.15.11+
 - Updated to latest dependencies (Fabric API 0.92.2+)
 - Improved performance with minimal impact on gameplay
 - Fixed compatibility issues with other popular Fabric mods

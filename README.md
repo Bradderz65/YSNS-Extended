@@ -8,12 +8,17 @@ YSNS (You Shall Not Spawn) is a lightweight mod that gives you complete control 
 
 ## What's New in This Extended Edition?
 
-- **Biome-Specific Controls**: Control mob spawning based on biomes - keep certain mobs out of specific areas
-- **Advanced Pattern Matching**: Use powerful regex patterns to target groups of mobs or biomes at once
-- **Spawn Chance Control**: Set custom spawn chances from 0% to 100% for fine-tuned mob control
-- **Optimized for 1.20.1**: Fully compatible with Minecraft 1.20.1 and the latest Fabric loader (0.15.11+)
-- **Updated Dependencies**: Works with the latest Fabric API (0.92.2+) and Necronomicon (1.4.2)
-- **Performance Optimized**: Minimal impact on game performance even with complex rules
+- **NEW: Biome-Specific Controls**: Control mob spawning based on biomes - keep certain mobs out of specific areas
+- **Updated for 1.20.1**: Fully compatible with Minecraft 1.20.1 and the latest Fabric loader (0.15.11+)
+- **Latest Dependencies**: Works with the latest Fabric API (0.92.2+) and Necronomicon (1.4.2)
+- **Performance Improvements**: Optimized for better performance with minimal impact on gameplay
+
+## Original Features
+
+- **Global Entity Control**: Completely disable specific entities from spawning anywhere
+- **Dimension-Specific Rules**: Control spawn rates per dimension with customizable spawn chances
+- **Regex Pattern Support**: Use regular expressions to target multiple entities at once
+- **Fine-Tuned Spawn Control**: Set custom spawn chances from 0% to 100%
 
 ## Requirements
 
